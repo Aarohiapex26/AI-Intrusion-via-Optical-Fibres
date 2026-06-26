@@ -57,10 +57,12 @@ Browser APIs – Geolocation, Audio, DOM manipulation
 
 ## 📸 Screenshots
 ### Signal Detection
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8740aaa8-7c6f-4cba-80ca-e3bbc4f558ed" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/33944d22-4037-4b8c-88c4-acf730d44d4e" />
+
 
 
 ### Map Visualization
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/72c202a2-59ff-4fe2-b511-dfae6d8f9898" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/37cea777-adc1-4f52-a4eb-0c05d576e7f7" />
+
 
 
