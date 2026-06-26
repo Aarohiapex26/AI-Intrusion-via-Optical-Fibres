@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Optical Fibre Intrusion Detection</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Load libraries BEFORE your script -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <img src="https://www.osacogroup.com/wp-content/uploads/2025/05/EchoMind-RGB.png"  alt="AI Optical Fibre Logo" class="logo">
+    <h1>AI Optical Fibre</h1>
+    <h2 class="tagline">Where Fibres Listen and AI Think</h2>
+  </header>
+
+  <!-- Features Section -->
+  <section class="features">
+    <h2>✨ Key Features</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41377-022-01067-1/MediaObjects/41377_2022_1067_Figa_HTML.png" alt="Signal Simulation">
+        <h3>Signal Simulation</h3>
+        <p>Simulate footsteps, vehicles, and animal movements through fibre sensors.</p>
+      </div>
+      <div class="feature-card">
+        <img src="https://www.mdpi.com/sensors/sensors-22-06012/article_deploy/html/images/sensors-22-06012-g005.png" alt="Vibration Data">
+        <h3>Vibration Data</h3>
+        <p>Visualize real-time vibration patterns and signal strength variations.</p>
+      </div>
+      <div class="feature-card">
+        <img src="https://www.imveurope.com/sites/default/files/styles/content_banner/public/content/news-story/lead-image/IMVEFeb22NewsGlasgowFibre.jpg?h=def3cf70&itok=PblajSIL" alt="AI Spectrograms">
+        <h3>AI Spectrograms</h3>
+        <p>Analyze spectrograms using AI to classify intrusion types accurately.</p>
+      </div>
+      <div class="feature-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTFmxkJFkDFRfuU6oGm3bl6AcAFO2YgT8frw&s" alt="Alerts">
+        <h3>Instant Alerts</h3>
+        <p>Receive immediate alerts when suspicious activity is detected.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Signal Simulation Section -->
+  <section class="signals">
+    <h2>📊 Signal Simulation</h2>
+    <div class="controls">
+      <!-- Button calls detectActivity() -->
+      <button id="detectBtn">Detect Activity</button>
+    </div>
+    <div id="graphContainer" style="display:none;">
+      <canvas id="signalChart"></canvas>
+      <p id="result" class="result-text">Suspected Activity will appear here...</p>
+    </div>
+  </section>
+  <audio id="beepSound" src="beep.mp3" preload="auto"></audio>
+
+  <!-- Alerts Section -->
+<section class="alerts">
+  <h2>🚨 Intrusion Alerts</h2>
+  <div id="alertBox" class="alert-box">No alerts yet.</div>
+  <button id="alertBtn">Trigger Test Alert</button>
+  <audio id="beepSound" src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg" preload="auto"></audio>
+</section>
+
+
+<!-- Location Mapping Section -->
+<section class="location">
+  <h2>🗺️ Location Mapping</h2>
+  <p>See where the activity is detected around your house.</p>
+  <div id="map" style="width:100%; height:400px;"></div>
+</section>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <h2>Thank You!</h2>
+    <p>Made with ❤️ by Team EchoMind</p>
+  </footer>
+
+  <!-- Load your script LAST so detectActivity is available -->
+  <script src="script.js"></script>
+  <script>
+    // Ensure button is wired up after DOM loads
+    document.getElementById("detectBtn").addEventListener("click", detectActivity);
+  </script>
+</body>
+</html>

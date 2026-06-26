@@ -1,0 +1,111 @@
+body {
+  background-color: #001219;
+  color: #e9d8a6;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+.header {
+  background-color: #005f73;
+  padding: 40px;
+  color: #e9d8a6;
+}
+
+.logo {
+  width: 120px;
+}
+
+.tagline {
+  font-weight: bold;
+  color: #ee9b00;
+}
+
+.features {
+  background-color: #0a9396;
+  padding: 50px;
+}
+
+.feature-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  background-color: #94d2bd;
+  color: #001219;
+  border-radius: 10px;
+  width: 250px;
+  margin: 15px;
+  padding: 20px;
+}
+
+.feature-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.signals {
+  background-color: #ca6702;
+  padding: 50px;
+}
+
+button {
+  background-color: #ee9b00;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  color: #001219;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #bb3e03;
+}
+
+.alerts {
+  background-color: #ae2012;
+  padding: 50px;
+  color: #e9d8a6;
+}
+
+.alert-box {
+  background-color: #9b2226;
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+  from { opacity: 1; }
+  to { opacity: 0.5; }
+}
+
+.footer {
+  background-color: #005f73;
+  padding: 30px;
+  color: #e9d8a6;
+}
+
+
+.blink {
+  animation: blinkAlert 0.8s infinite alternate;
+}
+
+@keyframes blinkAlert {
+  from { opacity: 1; transform: scale(1); }
+  to { opacity: 0.6; transform: scale(1.05); }
+}
+
+
+.result-text {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ee9b00; /* amber highlight */
+}
+;
